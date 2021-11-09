@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import Form from '../form'
 
 const initialState = {
   name: '',
@@ -45,7 +46,8 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              <Form/>
+              {/* <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -92,7 +94,7 @@ export const Contact = (props) => {
                 <button type='submit' className='btn btn-custom btn-lg'>
                   Send Message
                 </button>
-              </form>
+              </form> */}
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
